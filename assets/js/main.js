@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
+(function ($) {
 
 	var	$window = $(window),
 		$body = $('body'),
@@ -30,7 +30,7 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
-
+	
 	// Fix: Flexbox min-height bug on IE.
 		if (browser.name == 'ie') {
 
@@ -53,6 +53,7 @@
 
 		}
 
+
 	// Nav.
 		var $nav = $header.children('nav'),
 			$nav_li = $nav.find('li');
@@ -64,7 +65,8 @@
 				$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
 
 			}
-
+		
+		
 	// Main.
 		var	delay = 325,
 			locked = false;
